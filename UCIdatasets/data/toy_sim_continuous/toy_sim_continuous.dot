@@ -1,0 +1,5 @@
+digraph {
+	A
+	Y
+	A -> Y [label=1.0]
+}
