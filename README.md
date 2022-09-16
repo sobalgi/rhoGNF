@@ -1,6 +1,6 @@
 # $\rho$-GNF : $\rho$-Graphical Normalizing Flows for sensitivity analysis using Gaussian Copula to model the degree of the non-causal association due to the unobserved confounding.
 
-$\rho$ represents the sensitivity parameter of the Gaussian copula that represents the linear dependence between the Gaussian noise of the $\rho$-GNF, $Z_A$ and $Z_Y$
+$\rho$ represents the sensitivity parameter of the Gaussian copula that represents the non-causal associaition/dependence between the Gaussian noise of the $\rho$-GNF, $Z_A$ and $Z_Y$. Since the transformations of $Z_A \rightarrow A$ and $Z_Y /rightarrow Y$ are monotonic by design, the non-causal association due to unobserved confounding modeled by the copula represents the non-causal association between $A$ and $Y$ thanks to scale-invariance property of $\rho$ to monotonically increasing transformations.
 
 The implementation of rho-GNF is done by extending the offical codes for the paper: Graphical Normalizing Flows,  Antoine Wehenkel and Gilles Louppe.  (May 2020). [[arxiv]](https://arxiv.org/abs/2006.02548) [[github]](https://github.com/AWehenkel/Graphical-Normalizing-Flows)
 
