@@ -1,6 +1,6 @@
-# $\rho$-GNF : $\rho$-Graphical Normalizing Flows for sensitivity analysis using Gaussian Copula to model the degree of the non-causal association due to the unobserved confounding.
+# $\rho$-GNF : $\rho$-Graphical Normalizing Flows for sensitivity analysis using Gaussian Copula to model the degree of the non-causal association due to the unobserved confounding. [[arxiv]](https://arxiv.org/abs/2209.07111)
 
-$\rho$ represents the sensitivity parameter of the Gaussian copula that represents the non-causal associaition/dependence between the Gaussian noise of the $\rho$-GNF, $Z_A$ and $Z_Y$. Since the transformations of $Z_A \rightarrow A$ and $Z_Y \rightarrow Y$ are monotonic by design, the non-causal association due to unobserved confounding modeled by the copula represents the non-causal association between $A$ and $Y$ thanks to scale-invariance property of $\rho$ to monotonically increasing transformations.
+$\rho$ represents the sensitivity parameter of the Gaussian copula that represents the non-causal associaition/dependence between the Gaussian noise of the $\rho$-GNF, $Z_A$ and $Z_Y$. Since the transformations of $Z_A \rightarrow A$ and $Z_Y \rightarrow Y$ are monotonic by design, the non-causal association due to unobserved confounding modeled by the copula represents the non-causal association between $A$ and $Y$ thanks to scale-invariance property of $\rho$ to monotonically increasing transformations. 
 
 The implementation of rho-GNF is done by extending the offical codes for the paper: `Graphical Normalizing Flows,  Antoine Wehenkel and Gilles Louppe.  (May 2020)`. [[arxiv]](https://arxiv.org/abs/2006.02548) [[github]](https://github.com/AWehenkel/Graphical-Normalizing-Flows)
 
@@ -59,3 +59,7 @@ to run the rho-GNF corresponding to the real-world observational dataset with th
 
 y_dim represents the dimension of the outcome to be used. 1:education, 2:health, 3:information, 4: malnutrition, 5: sanitization, 6: shelter, 7: water, 8: total degree of all the 7 individual dimensions of child poverty.
 
+If you use c-GNF or $\rho $-GNF, please cite 
+`Balgi, S., Peña, J. M., & Daoud, A. (2022). Personalized Public Policy Analysis in Social Sciences Using Causal-Graphical Normalizing Flows. Proceedings of the AAAI Conference on Artificial Intelligence, 36(11), 11810-11818.` [[paper]](https://doi.org/10.1609/aaai.v36i11.21437)
+and
+`Balgi, S., Peña, J. M., & Daoud, A. (2022). $\rho $-GNF: A Novel Sensitivity Analysis Approach Under Unobserved Confounders. arXiv preprint arXiv:2209.07111.` [[arxiv]](https://arxiv.org/abs/2209.07111)
