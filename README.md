@@ -1,4 +1,4 @@
-# $\rho$-GNF : $\rho$-Graphical Normalizing Flows for sensitivity analysis using Gaussian Copula to model the degree of the non-causal association due to the unobserved confounding. [[arxiv]](https://arxiv.org/abs/2209.07111)
+# $\rho$-GNF : $\rho$-GNF: A Copula-based Sensitivity Analysis to Unobserved Confounding Using Normalizing Flows. [[arxiv]](https://arxiv.org/abs/2209.07111)
 
 $\rho$ represents the sensitivity parameter of the Gaussian copula that represents the non-causal associaition/dependence between the Gaussian noise of the $\rho$-GNF, $Z_A$ and $Z_Y$. Since the transformations of $Z_A \rightarrow A$ and $Z_Y \rightarrow Y$ are monotonic by design, the non-causal association due to unobserved confounding modeled by the copula represents the non-causal association between $A$ and $Y$ thanks to scale-invariance property of $\rho$ to monotonically increasing transformations. 
 
@@ -19,8 +19,8 @@ pip install -r requirements.txt
 # Code architecture
 This repository provides some code to build diverse types normalizing flow models in PyTorch. The core components are located in the **models** folder. The different flow models are described in the file **NormalizingFlow.py** and they all follow the structure of the parent **class NormalizingFlow**.
 A flow step is usually designed as a combination of a **normalizer** (such as the ones described in Normalizers sub-folder) with a **conditioner** (such as the ones described in Conditioners sub-folder). Following the code hierarchy provided makes the implementation of new conditioners, normalizers or even complete flow architecture very easy.
-#  $\rho$-GNF NeurIPS2022 submission experiments
-## Three different settings of datasets and experiments presented in our $\rho$-GNF NeurIPS2022 submission
+#  $\rho$-GNF PGM2024 submission experiments
+## Three different settings of datasets and experiments presented in our $\rho$-GNF PGM2024 submission
 ### 1. Simulated dataset with  ``Continuous variables`` with the code `python ToySimulatedContinuous.py -h`.
 ```bash
 python ToySimulatedContinuous.py -alpha ALPHA -beta BETA -delta DELTA -rho RHO
@@ -60,6 +60,6 @@ to run the rho-GNF corresponding to the real-world observational dataset with th
 y_dim represents the dimension of the outcome to be used. 1:education, 2:health, 3:information, 4: malnutrition, 5: sanitization, 6: shelter, 7: water, 8: total degree of all the 7 individual dimensions of child poverty.
 
 If you use c-GNF or $\rho $-GNF, please cite 
-`Balgi, S., Peña, J. M., & Daoud, A. (2022). Personalized Public Policy Analysis in Social Sciences Using Causal-Graphical Normalizing Flows. Proceedings of the AAAI Conference on Artificial Intelligence, 36(11), 11810-11818.` [[paper]](https://doi.org/10.1609/aaai.v36i11.21437)
+  1. `Balgi, S., Peña, J. M., & Daoud, A. (2022). Personalized Public Policy Analysis in Social Sciences Using Causal-Graphical Normalizing Flows. In Proceedings of the AAAI Conference on Artificial Intelligence, 36(11), 11810-11818.` [[paper]](https://doi.org/10.1609/aaai.v36i11.21437)
 and
-`Balgi, S., Peña, J. M., & Daoud, A. (2022). $\rho $-GNF: A Novel Sensitivity Analysis Approach Under Unobserved Confounders. arXiv preprint arXiv:2209.07111.` [[arxiv]](https://arxiv.org/abs/2209.07111)
+  2. `Balgi, S., Peña, J. M., & Daoud, A. (2022). $\rho $-GNF: A Novel Sensitivity Analysis Approach Under Unobserved Confounders. In Proceedings of the 12th International Conference on Probabilistic Graphical Models (PGM 2024) - Proceedings of Machine Learning Research, (to appear).` [[arxiv]](https://arxiv.org/abs/2209.07111)
