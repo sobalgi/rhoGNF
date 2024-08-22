@@ -62,4 +62,4 @@ y_dim represents the dimension of the outcome to be used. 1:education, 2:health,
 If you use c-GNF or $\rho $-GNF, please cite 
   1. `Balgi, S., Peña, J. M., & Daoud, A. (2022). Personalized Public Policy Analysis in Social Sciences Using Causal-Graphical Normalizing Flows. In Proceedings of the AAAI Conference on Artificial Intelligence, 36(11), 11810-11818.` [[paper]](https://doi.org/10.1609/aaai.v36i11.21437)
 and
-  2. `Balgi, S., Peña, J. M., & Daoud, A. (2022). $\rho $-GNF: A Novel Sensitivity Analysis Approach Under Unobserved Confounders. In Proceedings of the 12th International Conference on Probabilistic Graphical Models (PGM 2024) - Proceedings of Machine Learning Research, (to appear).` [[arxiv]](https://arxiv.org/abs/2209.07111)
+  2. `Balgi, S., Peña, J. M., & Daoud, A. (2022). $\rho $-GNF: A Copula-based Sensitivity Analysis to Unobserved Confounding Using Normalizing Flows. In Proceedings of the 12th International Conference on Probabilistic Graphical Models (PGM 2024) - Proceedings of Machine Learning Research, (to appear).` [[arxiv]](https://arxiv.org/abs/2209.07111)
